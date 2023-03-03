@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Java八股文 | 知识的小窝</title><meta name="author" content="Xiang Yun"><meta name="copyright" content="Xiang Yun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.MybatisPlus   MyBatis-Plus是一个开源的MyBatis增强工具包，它简化了在Java应用中使用MyBatis的开发流程，提供了更为便捷的CRUD操作，以及强大的代码生成功能。 MyBatis-Plus的主要特点包括：  简化开发：提供了大量的通用接口和实现，使得开发者无需手写大量的重复代码，如Mapper接口、Service接口等。 支持自动代码生成：可以根据数据库表生">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java八股文">
+<meta property="og:url" content="http://resgt.github.io/2023/03/03/JAVA%E9%A1%B9%E7%9B%AE%E5%85%AB%E8%82%A1%E6%96%87/index.html">
+<meta property="og:site_name" content="知识的小窝">
+<meta property="og:description" content="1.MybatisPlus   MyBatis-Plus是一个开源的MyBatis增强工具包，它简化了在Java应用中使用MyBatis的开发流程，提供了更为便捷的CRUD操作，以及强大的代码生成功能。 MyBatis-Plus的主要特点包括：  简化开发：提供了大量的通用接口和实现，使得开发者无需手写大量的重复代码，如Mapper接口、Service接口等。 支持自动代码生成：可以根据数据库表生">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg">
+<meta property="article:published_time" content="2023-03-03T08:45:14.877Z">
+<meta property="article:modified_time" content="2023-03-03T08:45:30.711Z">
+<meta property="article:author" content="Xiang Yun">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://resgt.github.io/2023/03/03/JAVA%E9%A1%B9%E7%9B%AE%E5%85%AB%E8%82%A1%E6%96%87/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Java八股文',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-03 16:45:30'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://bu.dusays.com/2022/05/02/626f92e193879.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="知识的小窝"><span class="site-name">知识的小窝</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java八股文</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-03T08:45:14.877Z" title="发表于 2023-03-03 16:45:14">2023-03-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-03T08:45:30.711Z" title="更新于 2023-03-03 16:45:30">2023-03-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.5k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java八股文"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>1.MybatisPlus </p>
+<blockquote>
+<p>MyBatis-Plus是一个开源的MyBatis增强工具包，它简化了在Java应用中使用MyBatis的开发流程，提供了更为便捷的CRUD操作，以及强大的代码生成功能。</p>
+<p>MyBatis-Plus的主要特点包括：</p>
+<ol>
+<li>简化开发：提供了大量的通用接口和实现，使得开发者无需手写大量的重复代码，如Mapper接口、Service接口等。</li>
+<li>支持自动代码生成：可以根据数据库表生成实体类、Mapper接口、Service接口等代码，提高了开发效率。</li>
+<li>支持分页查询：提供了基于物理分页和基于内存分页两种分页方式，支持动态排序。</li>
+<li>MyBatis-Plus的使用非常简单，只需要在项目中引入相关依赖，配置好数据库连接信息和实体类映射关系即可开始进行CRUD操作。</li>
+</ol>
+</blockquote>
+<p>2.前后端分离概念 </p>
+<blockquote>
+<p>前后端分离是一种软件架构模式，将前端和后端开发分离为两个独立的应用程序。前端应用程序负责展示界面和交互逻辑，后端应用程序则负责处理业务逻辑和数据存储等任务。</p>
+<p>在传统的Web应用程序中，前端和后端是耦合在一起的，前端页面由后端渲染，前端与后端的交互也由后端控制。而在前后端分离的架构中，前端和后端通过API进行通信，前端通过API获取数据并展示页面，用户与前端进行交互，前端再通过API将用户的操作请求发送到后端进行处理。</p>
+<p>前后端分离的优点包括：</p>
+<ol>
+<li>前后端各自独立开发，可以提高开发效率和代码质量。</li>
+<li>前端与后端分离，可以让前端更加专注于界面设计和用户体验，后端更加专注于业务逻辑和数据存储。</li>
+<li>通过API进行通信，可以提高系统的扩展性和可维护性。</li>
+<li>前后端可以选择不同的技术栈进行开发，可以更好地满足项目需求。</li>
+</ol>
+<p>前后端分离的缺点包括：</p>
+<ol>
+<li>由于前后端需要通过API进行通信，因此在性能和安全方面需要更多的考虑。</li>
+<li>前后端分离需要更多的技术和人力资源，需要专业的前端和后端开发团队。</li>
+<li>前后端分离的代码结构相对复杂，需要更好的项目管理和协作机制。</li>
+</ol>
+</blockquote>
+<p>3.swagger 接口测试工具</p>
+<blockquote>
+<p>Swagger是一个开源的API开发工具，提供了一系列工具来创建、文档化、测试和部署API。Swagger UI提供了一个可视化的接口测试工具，可以方便地测试API的各种接口请求，并在页面上直接查看接口的响应结果。使用Swagger进行接口测试可以极大地提高开发效率和测试效果。在Swagger UI中，我们可以通过简单的界面操作来构建和发送HTTP请求，然后查看响应结果、HTTP状态码等详细信息，这样能够大大提高我们对API的理解和调试效率。</p>
+</blockquote>
+<p>4.node.js</p>
+<p>5.npm</p>
+<p>6.阿里云oss</p>
+<p>7.nginx</p>
+<blockquote>
+<p>Nginx是一个高性能的开源Web服务器，在负载均衡的应用场景中，Nginx 作为反向代理服务器，可以接受客户端的请求，并将这些请求转发到后端的多个应用服务器上，从而分摊服务器的压力，提高网站的访问速度和并发量。Nginx 作为负载均衡器的主要作用就是将请求均匀地分发到不同的服务器上。通过编辑Nginx配置文件添加负载均衡器名称并添加反向代理将请求发送到负载均衡器实现。</p>
+</blockquote>
+<p>9.阿里云视频点播</p>
+<p>10.SDK</p>
+<blockquote>
+<p>SDK是Software Development Kit的缩写，翻译为“软件开发工具包”。它是为特定软件开发平台或硬件设备提供的一套软件开发工具、API文档、示例代码等资源的集合，通常包括编译器、调试器、库文件、文档等工具，开发者可以利用这些工具来开发相应的软件或应用程序。SDK的存在可以简化软件开发流程，提高开发效率和开发质量。</p>
+</blockquote>
+<p>11.微服务概念</p>
+<blockquote>
+<p>微服务是一种软件开发方法，它将应用程序划分为小型、独立的服务，每个服务都具有自己的独立进程和数据存储。这些服务可以在不同的语言、平台和技术堆栈之间进行通信，通常使用HTTP或消息传递协议。</p>
+<p>微服务产生的原因主要是应对传统单体应用程序的缺点。单体应用程序随着规模的增长变得越来越难以维护和扩展，因为它们通常是一个巨大的、紧密耦合的代码库。微服务通过将应用程序拆分成小型服务，每个服务都专注于一个具体的功能，从而使应用程序更加灵活、可扩展和易于维护。</p>
+</blockquote>
+<p>12.Nacos</p>
+<p>13.SpringCloud</p>
+<p>14.NUXT elementUI</p>
+<p>15.单点登录</p>
+<p>16.JWT</p>
+<p>17.阿里云短信</p>
+<p>18.微信扫码登录</p>
+<p>19.oAuth2</p>
+<p>20.跨域问题怎么解决</p>
+<p>21.maven</p>
+<blockquote>
+<p>Maven是一个基于Java的自动化构建工具，它提供了一个能够自动化构建项目、管理依赖、运行测试以及发布产物的框架。使用Maven可以让项目构建和依赖管理更加方便，节省时间和精力。它使用pom.xml文件来描述项目依赖和配置信息，并且可以通过命令行或者IDE插件来执行构建任务。Maven的核心理念是约定优于配置，它提供了一系列默认配置和约定，可以极大地简化构建配置的复杂性。</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://resgt.github.io">Xiang Yun</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://resgt.github.io/2023/03/03/JAVA%E9%A1%B9%E7%9B%AE%E5%85%AB%E8%82%A1%E6%96%87/">http://resgt.github.io/2023/03/03/JAVA%E9%A1%B9%E7%9B%AE%E5%85%AB%E8%82%A1%E6%96%87/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://resgt.github.io" target="_blank">知识的小窝</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/03/03/AI%E5%85%AB%E8%82%A1%E6%96%87/" title="AI基础知识"><img class="cover" src="https://bu.dusays.com/2023/02/20/63f371a777341.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">AI基础知识</div></div></a></div><div class="next-post pull-right"><a href="/2023/03/03/Transformer/" title="Transformer论文"><img class="cover" src="https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Transformer论文</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://bu.dusays.com/2022/05/02/626f92e193879.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Xiang Yun</div><div class="author-info__description">深度学习与算法内容总结</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我要干一件大事情</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/03/03/AI%E5%85%AB%E8%82%A1%E6%96%87/" title="AI基础知识"><img src="https://bu.dusays.com/2023/02/20/63f371a777341.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AI基础知识"/></a><div class="content"><a class="title" href="/2023/03/03/AI%E5%85%AB%E8%82%A1%E6%96%87/" title="AI基础知识">AI基础知识</a><time datetime="2023-03-03T08:46:11.243Z" title="发表于 2023-03-03 16:46:11">2023-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/03/JAVA%E9%A1%B9%E7%9B%AE%E5%85%AB%E8%82%A1%E6%96%87/" title="Java八股文"><img src="https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java八股文"/></a><div class="content"><a class="title" href="/2023/03/03/JAVA%E9%A1%B9%E7%9B%AE%E5%85%AB%E8%82%A1%E6%96%87/" title="Java八股文">Java八股文</a><time datetime="2023-03-03T08:45:14.877Z" title="发表于 2023-03-03 16:45:14">2023-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/03/Transformer/" title="Transformer论文"><img src="https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Transformer论文"/></a><div class="content"><a class="title" href="/2023/03/03/Transformer/" title="Transformer论文">Transformer论文</a><time datetime="2023-03-03T08:44:16.932Z" title="发表于 2023-03-03 16:44:16">2023-03-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/02/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%9A%84%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8/" title="单源最短路的综合应用"><img src="https://bu.dusays.com/2023/01/02/63b261ab9197d.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="单源最短路的综合应用"/></a><div class="content"><a class="title" href="/2023/03/02/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%9A%84%E7%BB%BC%E5%90%88%E5%BA%94%E7%94%A8/" title="单源最短路的综合应用">单源最短路的综合应用</a><time datetime="2023-03-02T15:33:56.069Z" title="发表于 2023-03-02 23:33:56">2023-03-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/02/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%9A%84%E5%BB%BA%E5%9B%BE%E6%96%B9%E5%BC%8F/" title="单源最短路的建图方式"><img src="https://bu.dusays.com/2022/11/24/637f8eb9b09dc.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="单源最短路的建图方式"/></a><div class="content"><a class="title" href="/2023/03/02/%E5%8D%95%E6%BA%90%E6%9C%80%E7%9F%AD%E8%B7%AF%E7%9A%84%E5%BB%BA%E5%9B%BE%E6%96%B9%E5%BC%8F/" title="单源最短路的建图方式">单源最短路的建图方式</a><time datetime="2023-03-02T15:33:56.067Z" title="发表于 2023-03-02 23:33:56">2023-03-02</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://bu.dusays.com/2022/07/17/62d40e4ab4473.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Xiang Yun</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
